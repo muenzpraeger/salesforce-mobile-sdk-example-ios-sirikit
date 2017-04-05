@@ -1,0 +1,23 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '9.0'
+
+project 'SiriKitExample.xcodeproj'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'SiriKitExample' do
+    pod 'SalesforceAnalytics', :path => 'node_modules/SalesforceMobileSDK-iOS'
+    pod 'SalesforceSDKCore', :path => 'node_modules/SalesforceMobileSDK-iOS'
+    pod 'SmartStore', :path => 'node_modules/SalesforceMobileSDK-iOS'
+    pod 'SmartSync', :path => 'node_modules/SalesforceMobileSDK-iOS'
+    
+    target 'ChatterIntent' do
+        pod 'SalesforceAnalytics', :path => 'node_modules/SalesforceMobileSDK-iOS'
+        pod 'SalesforceSDKCore', :path => 'node_modules/SalesforceMobileSDK-iOS'
+        pod 'SmartStore', :path => 'node_modules/SalesforceMobileSDK-iOS'
+        pod 'SmartSync', :path => 'node_modules/SalesforceMobileSDK-iOS'
+    end
+end
+
